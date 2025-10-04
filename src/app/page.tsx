@@ -3,14 +3,14 @@ export default function Home() {
     <div className="font-sans">
       {/* Hero */}
       <section className="container pt-20 pb-16">
-        <div className="mx-auto max-w-4xl flex flex-col items-center text-center gap-4 px-2">
-          <h1 className="heading-hero text-4xl sm:text-6xl leading-[1.1] max-w-3xl">
-            בעולם שמחפש לריב, אני מציע לפתור בעיות.
-          </h1>
-          <p className="text-foreground/70 max-w-prose">
-            הראש של תיקו הוא מרחב חשיבה. מקום שבו הבעיות נפתרות. לא בכוח, אלא
-            ב- WinWin.
-          </p>
+        <div className="mx-auto max-w-4xl flex flex-col items-center text-center gap-3 sm:gap-4 px-2">
+          <div className="relative w-56 h-12 md:w-72 md:h-14">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/brand/tico_logo_800.png" alt="TICO" className="h-full w-auto mx-auto" />
+          </div>
+          <div className="tagline-en text-xs sm:text-sm uppercase text-foreground/70">
+            DARE TO THINK. COMMIT TO DELIVER
+          </div>
         </div>
       </section>
 

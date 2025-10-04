@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Assistant, Montserrat } from "next/font/google";
 import Link from "next/link";
+import Image from "next/image";
 import "./globals.css";
 import { MobileNav } from "./components/MobileNav";
 
@@ -39,19 +40,18 @@ export default function RootLayout({
         <header className="border-b border-foreground/10 bg-white/70 backdrop-blur supports-[backdrop-filter]:bg-white/60 shadow-[0_2px_8px_rgba(0,0,0,0.04)] md:shadow-none">
           <div className="container">
             <div className="mx-auto max-w-4xl flex items-center justify-between h-20">
-              <div className="flex items-center gap-3">
-              <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-accent" aria-hidden></div>
-              <div className="flex flex-col leading-tight">
-                <span className="font-display text-xl font-extrabold tracking-tight text-foreground">TICO</span>
-                <span className="tagline-en text-[10px] uppercase text-foreground/70">DARE TO THINK. COMMIT TO DELIVER</span>
-              </div>
-              </div>
               <nav className="hidden md:flex items-center gap-8 text-sm text-foreground/80">
                 <Link href="/" className="hover:text-foreground transition font-semibold">בית</Link>
                 <Link href="/about" className="hover:text-foreground transition font-semibold">הראש של תיקו</Link>
                 <Link href="/services" className="hover:text-foreground transition font-semibold">הכלים שלנו</Link>
                 <Link href="/contact" className="hover:text-foreground transition font-semibold">צור קשר</Link>
               </nav>
+              <div className="flex flex-col items-start gap-1 leading-tight">
+                <div className="relative w-28 h-10 md:w-32 md:h-12">
+                  <Image src="/brand/tico_logo_240.png" alt="TICO" fill sizes="(max-width: 768px) 7rem, 8rem" />
+                </div>
+                <span className="tagline-en text-[10px] uppercase text-foreground/70">DARE TO THINK. COMMIT TO DELIVER</span>
+              </div>
               <MobileNav />
             </div>
           </div>
