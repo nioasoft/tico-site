@@ -2,8 +2,8 @@
 
 :root {
   /* Soft light theme */
-  --background: #f7f8fb;
-  --foreground: #111317;
+  --background: #ffffff;
+  --foreground: #000000;
   --muted: #5b6168;
   /* Accent: deep blue (can be swapped to gold/bronze) */
   --accent: #1f3a8a;

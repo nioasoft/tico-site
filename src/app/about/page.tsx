@@ -9,7 +9,9 @@ export default function AboutPage() {
     <div className="container py-14">
       <div className="mx-auto max-w-4xl px-2">
         <h1 className="heading-hero text-3xl sm:text-5xl mb-6 text-center">
-        הראש של תיקו. עולם של בהירות. של פתרון אמיתי.
+        הראש של תיקו.<br />
+        עולם של בהירות.<br />
+        של פתרון אמיתי.
         </h1>
       </div>
       <div className="mx-auto max-w-4xl px-2">

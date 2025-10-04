@@ -32,31 +32,31 @@ export function ContactForm() {
     <form onSubmit={onSubmit} className="space-y-4">
       <div className="grid gap-4 md:grid-cols-2">
         <label className="grid gap-1">
-          <span className="text-sm text-white/80">שם</span>
-          <input name="name" required className="bg-white/5 border border-white/10 rounded px-3 py-2" />
+          <span className="text-sm text-foreground/80">שם</span>
+          <input name="name" required className="bg-foreground/5 border border-foreground/10 rounded px-3 py-2" />
         </label>
         <label className="grid gap-1">
-          <span className="text-sm text-white/80">חברה</span>
-          <input name="company" className="bg-white/5 border border-white/10 rounded px-3 py-2" />
+          <span className="text-sm text-foreground/80">חברה</span>
+          <input name="company" className="bg-foreground/5 border border-foreground/10 rounded px-3 py-2" />
         </label>
       </div>
       <div className="grid gap-4 md:grid-cols-2">
         <label className="grid gap-1">
-          <span className="text-sm text-white/80">טלפון</span>
-          <input name="phone" className="bg-white/5 border border-white/10 rounded px-3 py-2" />
+          <span className="text-sm text-foreground/80">טלפון</span>
+          <input name="phone" className="bg-foreground/5 border border-foreground/10 rounded px-3 py-2" />
         </label>
         <label className="grid gap-1">
-          <span className="text-sm text-white/80">אימייל</span>
-          <input type="email" name="email" required className="bg-white/5 border border-white/10 rounded px-3 py-2" />
+          <span className="text-sm text-foreground/80">אימייל</span>
+          <input type="email" name="email" required className="bg-foreground/5 border border-foreground/10 rounded px-3 py-2" />
         </label>
       </div>
       <label className="grid gap-1">
-        <span className="text-sm text-white/80">נושא</span>
-        <input name="subject" className="bg-white/5 border border-white/10 rounded px-3 py-2" />
+        <span className="text-sm text-foreground/80">נושא</span>
+        <input name="subject" className="bg-foreground/5 border border-foreground/10 rounded px-3 py-2" />
       </label>
       <label className="grid gap-1">
-        <span className="text-sm text-white/80">הודעה</span>
-        <textarea name="message" rows={5} className="bg-white/5 border border-white/10 rounded px-3 py-2" />
+        <span className="text-sm text-foreground/80">הודעה</span>
+        <textarea name="message" rows={5} className="bg-foreground/5 border border-foreground/10 rounded px-3 py-2" />
       </label>
       <button
         disabled={status === "loading"}
