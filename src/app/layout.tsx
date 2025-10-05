@@ -57,7 +57,7 @@ export default function RootLayout({
           </div>
         </header>
         <main>{children}</main>
-        <footer className="mt-16 border-t border-foreground/10">
+        <footer className="mt-12 border-t border-foreground/10">
           <div className="container py-10">
             <div className="mx-auto max-w-4xl rounded-2xl border border-foreground/10 bg-white p-8 sm:p-10 text-sm text-foreground/80">
               <div className="grid items-start gap-8 text-center md:grid-cols-2">
